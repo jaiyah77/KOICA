@@ -1,0 +1,2327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>코딩 가이드</title>
+	<link type="text/css" rel="stylesheet" href="guide.css"/>
+	<script src="jquery-2.2.4.min.js"></script>
+	<script src="guide.js"></script>
+	<script src="prism.js"></script>
+</head>
+<body id="guide">
+
+<header>
+	<div id="header">
+		<h1>IA (Imformation Architeture)</h1>
+		<h2 class="ribbon">
+			KOICA Publishing
+			<i></i>
+			<i></i>
+			<i></i>
+			<i></i>
+		</h2>
+	</div>
+</header>
+
+<section id="contents">
+	<div class="state-wrap">
+		<div class="state-group">
+			<strong>진행상태</strong> : &nbsp;
+			<span class="state"><span class="undecided">미</span></span> 미정,
+			<span class="state"><span class="delete">삭</span></span> 삭제,
+			<span class="state"><span class="edit">중</span></span> 진행 및 수정 중,
+			<span class="state"><span class="complete">완</span></span> 완료
+			<div class="btn-guide"><a href="layout.html" class="on">Go to WSG <span class="img_swipe bounce_ani">화살표</span></a></div>
+		</div>
+		<p class="total"><span class="per">종합 진척률 : <span class="result"></span></span> <span class="comp"></span></p>
+	</div>
+	
+	<table border="0" class="working-list">
+		<colgroup>
+			<col style="width:5%;"/>
+			<col style="width:auto;"/>
+			<col style="width:30%;"/>
+			<col style="width:15%;"/>
+			<col style="width:10%;"/>
+			<col style="width:10%;"/>
+			<col style="width:7%;"/>
+		</colgroup>
+		<thead>
+		<tr>
+			<th>No</th>
+			<th>Depth</th>
+			<th>File Directory (URL)</th>
+			<th>
+				<select name="select">
+					<option value="">담당자</option>
+				</select>
+			</th>
+			<th>
+				<select name="select">
+					<option value="">date</option>
+				</select>
+			</th>
+			<th>검수 상태</th>
+			<th>퍼블 상태</th>
+		</tr>
+		</thead>
+		<tbody>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">메인</div>
+				</td>
+			</tr>
+			<tr>
+				
+				<td>메인</td>
+				<td>/UI-BA-00-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td><!--검수요청--></td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">해외봉사단 소개</div>
+				</td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > KOICA 해외봉사단 개요 > 목적</td>
+				<td>/UI-BA-AA-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td><!--검수완료--></td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > KOICA 해외봉사단 개요 > 역사</td>
+				<td>/UI-BA-AA-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > KOICA 해외봉사단 개요 > 추진절차</td>
+				<td>/UI-BA-AA-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > KOICA 해외봉사단 개요 > 사업유형</td>
+				<td>/UI-BA-AA-40.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > KOICA 해외봉사단 개요 > 오시는길</td>
+				<td>/UI-BA-AA-50.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 개발원조와 해외봉사단 > 한국의 개발원조</td>
+				<td>/UI-BA-AB-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 개발원조와 해외봉사단 > 한국국제협력단</td>
+				<td>/UI-BA-AB-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 개발원조와 해외봉사단 > 개발원조와 해외봉사단</td>
+				<td>/UI-BA-AB-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 개발원조와 해외봉사단 > 해외봉사단파견사업의 국제동향</td>
+				<td>/UI-BA-AB-40.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 사업절차 > 개요 및 모집/선발</td>
+				<td>/UI-BA-AC-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 사업절차 > 국내교육 및 파견</td>
+				<td>/UI-BA-AC-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 사업절차 > 현지적응교육</td>
+				<td>/UI-BA-AC-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 사업절차 > 해외봉사활동</td>
+				<td>/UI-BA-AC-40.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 사업절차 > 귀국 및 사후관리</td>
+				<td>/UI-BA-AC-50.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 활동분야 > 교육</td>
+				<td>/UI-BA-AD-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 활동분야 > 보건</td>
+				<td>/UI-BA-AD-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 활동분야 > 공공행정</td>
+				<td>/UI-BA-AD-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 활동분야 > 산업에너지</td>
+				<td>/UI-BA-AD-40.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 활동분야 > 농림수산</td>
+				<td>/UI-BA-AD-50.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 파견현황 > 지도 View</td>
+				<td>/UI-BA-AE-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 파견현황 > 표 & 그래프</td>
+				<td>/UI-BA-AE-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 활동국가 > 대륙별 정보</td>
+				<td>/UI-BA-AF-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 활동국가 > 국별 정보 > 세계지도</td>
+				<td>/UI-BA-AF-21.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 활동국가 > 국별 정보 > 아시아</td>
+				<td>/UI-BA-AF-22.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 활동국가 > 국별 정보 > 아프리카</td>
+				<td>/UI-BA-AF-23.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 활동국가 > 국별 정보 > 중남미</td>
+				<td>/UI-BA-AF-24.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 활동국가 > 국별 정보 > 동구 CIS</td>
+				<td>/UI-BA-AF-25.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 활동국가 > 국별 정보 > 중동</td>
+				<td>/UI-BA-AF-26.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 활동국가 > 기관 정보 ( LIST )</td>
+				<td>/UI-BA-AF-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 자격요건 > 직종별 자격요건</td>
+				<td>/UI-BA-AG-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 자격요건 > 파견형태별 자격요건</td>
+				<td>/UI-BA-AG-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 지원내역 > 경비지원</td>
+				<td>/UI-BA-AH-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 지원내역 > 활동지원</td>
+				<td>/UI-BA-AH-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 지원내역 > 의료지원</td>
+				<td>/UI-BA-AH-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 지원내역 > 안전지원</td>
+				<td>/UI-BA-AH-40.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 소개 > 월드프렌즈 KOICA 자문단</td>
+				<td>/UI-BA-AI-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">해외봉사단 모집</div>
+				</td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 모집공지사항 > LIST</td>
+				<td>/UI-BA-BA-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 모집공지사항 > VIEW</td>
+				<td>/UI-BA-BA-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 모집공지사항 > RSS 안내 팝업</td>
+				<td>/UI-BA-BA-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 모집공지사항 > RSS 페이지</td>
+				<td>/UI-BA-BA-40.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 모집일정</td>
+				<td>/UI-BA-BB-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 지원서 접수기간이 아닙니다</td>
+				<td>/UI-BA-BC-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 지원서 작성 (로그인필수) </td>
+				<td>/UI-BA-BC-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 지원서 작성 (로그인필수) > 지원서작성 0.개인정보제공및 이용동의</td>
+				<td>/UI-BA-BC-21.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 지원서 작성 (로그인필수) > 지원서작성 1. 기본사항</td>
+				<td>/UI-BA-BC-22.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 지원서 작성 (로그인필수) > 지원서작성 1. 기본사항 > 희망국가팝업</td>
+				<td>/UI-BA-BC-23.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 지원서 작성 (로그인필수) > 지원서작성 1. 기본사항 > 우편번호 검색</td>
+				<td>/UI-BA-BC-24.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 지원서 작성 (로그인필수) > 지원서작성 2. 학력/경력사항</td>
+				<td>/UI-BA-BC-25.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 지원서 작성 (로그인필수) > 지원서작성 3. 기타사항</td>
+				<td>/UI-BA-BC-26.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 지원서 작성 (로그인필수) > 지원서작성 4. 자기소개서</td>
+				<td>/UI-BA-BC-27.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 지원서 작성 (로그인필수) > 지원서작성 5. 지원서확인</td>
+				<td>/UI-BA-BC-28.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 지원서 작성 (로그인필수) > 지원서작성 6. 완료페이지</td>
+				<td>/UI-BA-BC-29.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 지원서 접수확인 (로그인필수) > LIST</td>
+				<td>/UI-BA-BC-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 지원서 접수확인 (로그인필수) > VIEW (팝업)</td>
+				<td>/UI-BA-BC-31.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 합격자 발표 (로그인필수) > LIST</td>
+				<td>/UI-BA-BC-40.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 지원서작성 및 확인 > 합격자 발표 (로그인필수) > VIEW (팝업)</td>
+				<td>/UI-BA-BC-41.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 국내교육 > 국내교육 살펴보기</td>
+				<td>/UI-BA-BD-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 국내교육 > 국내교육 살펴보기 > 동영상보기</td>
+				<td>/UI-BA-BD-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 국내교육 > 교육참가시 준비사항</td>
+				<td>/UI-BA-BC-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 국내교육 > 교육참가신청서 작성 (로그인필수) > 작성폼</td>
+				<td>/UI-BA-BC-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 국내교육 > 교육참가신청서 작성 (로그인필수) > 작성내용</td>
+				<td>/UI-BA-BC-31.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견일정</td>
+				<td>/UI-BA-BD-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견기관정보 > LIST</td>
+				<td>/UI-BA-BD-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견기관정보 > 상세보기</td>
+				<td>/UI-BA-BD-21.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견준비물 > 이집트</td>
+				<td>/UI-BA-BD-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견준비물 > 에티오피아</td>
+				<td>/UI-BA-BD-31.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견준비물 > 인도네시아</td>
+				<td>/UI-BA-BD-32.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견준비물 > 몽골</td>
+				<td>/UI-BA-BD-33.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견준비물 > 미얀마</td>
+				<td>/UI-BA-BD-34.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견준비물 > 필리핀</td>
+				<td>/UI-BA-BD-35.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견준비물 > 스리랑카</td>
+				<td>/UI-BA-BD-36.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견준비물 > 탄자니아</td>
+				<td>/UI-BA-BD-37.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견준비물 > 우크라이나</td>
+				<td>/UI-BA-BD-38.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견준비물 > 우즈벡</td>
+				<td>/UI-BA-BD-39.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 파견준비물 > 카자흐스탄</td>
+				<td>/UI-BA-BD-40.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 해외교육설문지 작성 > 국가교육 만족도 설문 작성</td>
+				<td>/UI-BA-BD-41.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 해외교육설문지 작성 > 국가교육 만족도 설문 view</td>
+				<td>/UI-BA-BD-42.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 해외교육설문지 작성 > 현지어교육 만족도 작성</td>
+				<td>/UI-BA-BD-43.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 해외교육설문지 작성 > 현지어교육 만족도 view</td>
+				<td>/UI-BA-BD-44.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 해외교육설문지 작성 > 현장실습교육 만족도 작성</td>
+				<td>/UI-BA-BD-45.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 해외교육설문지 작성 > 현장실습교육 만족도 view</td>
+				<td>/UI-BA-BD-46.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 해외교육설문지 작성 > 현지사정교육 만족도 작성</td>
+				<td>/UI-BA-BD-47.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 해외교육설문지 작성 > 현지사정교육 만족도 view</td>
+				<td>/UI-BA-BD-48.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 해외교육설문지 작성 > 민박 만족도 작성</td>
+				<td>/UI-BA-BD-49.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 해외교육설문지 작성 > 민박 민박 만족도 view</td>
+				<td>/UI-BA-BD-50.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 해외교육설문지 작성 > 기타행사 만족도 작성</td>
+				<td>/UI-BA-BD-51.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 모집 > 파견정보 (로그인필수) > 해외교육설문지 작성 > 기타행사 만족도 view</td>
+				<td>/UI-BA-BD-52.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">해외봉사단 활동</div>
+				</td>
+			</tr>
+			<tr>
+				<td>해외봉사단 활동 > 활동수기 > LIST</td>
+				<td>/UI-BA-CA-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 활동 > 활동수기 > VIEW</td>
+				<td>/UI-BA-CA-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 활동 > 활동모습 > LIST</td>
+				<td>/UI-BA-CB-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 활동 > 활동모습 > VIEW</td>
+				<td>/UI-BA-CB-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 활동 > 언론속의 해외봉사단 > 현지보도/KOICA소식 > LIST</td>
+				<td>/UI-BA-CC-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 활동 > 언론속의 해외봉사단 > 현지보도/KOICA소식 > VIEW</td>
+				<td>/UI-BA-CC-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 활동 > 언론속의 해외봉사단 > 언론보도 > LIST</td>
+				<td>/UI-BA-CC-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">해외봉사단 귀국후지원</div>
+				</td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > 지원안내 개요</td>
+				<td>/UI-BA-DA-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > 귀국 후 모임안내</td>
+				<td>/UI-BA-DB-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > 취업성공수기 > List</td>
+				<td>/UI-BA-DC-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > 취업성공수기 > VIEW</td>
+				<td>/UI-BA-DC-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > 귀국신고 > 귀국신고 작성 상태</td>
+				<td>/UI-BA-DD-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > 귀국신고 > 신고서작성1 - 파견정보, 개인정보</td>
+				<td>/UI-BA-DD-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > 귀국신고 > 신고서작성2 - 귀국단원 설문조사</td>
+				<td>/UI-BA-DD-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > 귀국신고 > 신고서작성3 - 진로희망조사서</td>
+				<td>/UI-BA-DD-40.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > 귀국신고 > 신고서작성4 - 신고서류 접수</td>
+				<td>/UI-BA-DD-50.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > 귀국신고 > 최종제출완료 페이지</td>
+				<td>/UI-BA-DD-60.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > 귀국단원 OPIC지원</td>
+				<td>/UI-BA-DE-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > WFK 장학금 신청 > WFK 장학금신청서 작성</td>
+				<td>/UI-BA-DF-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > WFK 장학금 신청 > WFK 장학금신청 결과확인</td>
+				<td>/UI-BA-DF-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > WFK 장학금 신청 > WKF 장학금신청 문의 > LIST </td>
+				<td>/UI-BA-DF-31.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > WFK 장학금 신청 > WKF 장학금신청 문의 > View </td>
+				<td>/UI-BA-DF-32.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > 2017년 캘린더 신청 > LIST </td>
+				<td>/UI-BA-DG-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>해외봉사단 귀국후지원 > 2017년 캘린더 신청 > View </td>
+				<td>/UI-BA-DG-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">참여마당</div>
+				</td>
+			</tr>
+			<tr>
+				<td>참여마당 > 공지사항 > LIST </td>
+				<td>/UI-BA-EA-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 공지사항 > View </td>
+				<td>/UI-BA-EA-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 안전정보 > LIST </td>
+				<td>/UI-BA-EB-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 안전정보 > View </td>
+				<td>/UI-BA-EB-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 자주묻는 질문 > LIST+VIEW </td>
+				<td>/UI-BA-EC-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 묻고답하기 > LIST </td>
+				<td>/UI-BA-ED-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 묻고답하기 > View </td>
+				<td>/UI-BA-ED-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 증명서발급 > 증명서발급 </td>
+				<td>/UI-BA-EE-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 증명서발급 > 증명서발급 > 국내교육입교 대상자 확인서 - 국문</td>
+				<td>/UI-BA-EE-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 증명서발급 > 증명서발급 > 파견예정 증명서 - 국문</td>
+				<td>/UI-BA-EE-12.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 증명서발급 > 증명서발급 > 경력증명서 - 국문</td>
+				<td>/UI-BA-EE-13.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 증명서발급 > 증명서발급 > 경력증명서 - 영문</td>
+				<td>/UI-BA-EE-14.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 증명서발급 > 증명서발급 > 파견증명서 - 국문</td>
+				<td>/UI-BA-EE-15.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 증명서발급 > 인터넷발급증명서 진위확인</td>
+				<td>/UI-BA-EE-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 증명서발급 > 인터넷발급증명서 진위확인 > 확인결과페이지</td>
+				<td>/UI-BA-EE-21.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 증명서발급 > 증명서 검증안내</td>
+				<td>/UI-BA-EE-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 자료실 > LIST</td>
+				<td>/UI-BA-EF-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>참여마당 > 자료실 > VIEW</td>
+				<td>/UI-BA-EF-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">예비단원 커뮤니티</div>
+				</td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 메인</td>
+				<td>/UI-BA-FA-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 커뮤니티 > 공지사항 > LIST</td>
+				<td>/UI-BA-FB-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 커뮤니티 > 공지사항 > VIEW</td>
+				<td>/UI-BA-FB-12.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 커뮤니티 > 커뮤니티 신설신청 > LIST</td>
+				<td>/UI-BA-FB-21.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 커뮤니티 > 커뮤니티 신설신청 > VIEW</td>
+				<td>/UI-BA-FB-22.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 커뮤니티 > 커뮤니티 신설신청 > WRITE</td>
+				<td>/UI-BA-FB-23.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 커뮤니티 > 자유게시판 > LIST</td>
+				<td>/UI-BA-FB-31.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 커뮤니티 > 자유게시판 > VIEW</td>
+				<td>/UI-BA-FB-32.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 커뮤니티 > 자유게시판 > WRITE</td>
+				<td>/UI-BA-FB-33.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 예비단원 홈페이지 > 지원 예정자 게시판 > LIST</td>
+				<td>/UI-BA-FC-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 예비단원 홈페이지 > 지원 예정자 게시판 > VIEW</td>
+				<td>/UI-BA-FC-12.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 예비단원 홈페이지 > 지원 예정자 게시판 > WRITE</td>
+				<td>/UI-BA-FC-13.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 예비단원 홈페이지 > 지원자 게시판 > LIST</td>
+				<td>/UI-BA-FC-21.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 예비단원 홈페이지 > 지원자 게시판 > VIEW</td>
+				<td>/UI-BA-FC-22.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>예비단원 커뮤니티 > 예비단원 홈페이지 > 지원자 게시판 > WRITE</td>
+				<td>/UI-BA-FC-23.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">교육원 커뮤니티</div>
+				</td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 메인</td>
+				<td>/UI-BA-GA-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 커뮤니티 > 공지사항 > LIST</td>
+				<td>/UI-BA-GB-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 커뮤니티 > 공지사항 > VIEW</td>
+				<td>/UI-BA-GB-12.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 커뮤니티 > 커뮤니티 신설신청 > LIST</td>
+				<td>/UI-BA-GB-21.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 커뮤니티 > 커뮤니티 신설신청 > VIEW</td>
+				<td>/UI-BA-GB-22.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 커뮤니티 > 커뮤니티 신설신청 > WRITE</td>
+				<td>/UI-BA-GB-23.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 커뮤니티 > 자유게시판 > LIST</td>
+				<td>/UI-BA-GB-31.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 커뮤니티 > 자유게시판 > VIEW</td>
+				<td>/UI-BA-GB-32.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 커뮤니티 > 자유게시판 > WRITE</td>
+				<td>/UI-BA-GB-33.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 교육원 홈페이지 > 예비 교육생 게시판 > LIST</td>
+				<td>/UI-BA-GC-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 교육원 홈페이지 > 예비 교육생 게시판 > VIEW</td>
+				<td>/UI-BA-GC-12.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 교육원 홈페이지 > 예비 교육생 게시판 > WRITE</td>
+				<td>/UI-BA-GC-13.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 교육원 홈페이지 > 교육생 게시판 > LIST</td>
+				<td>/UI-BA-GC-21.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 교육원 홈페이지 > 교육생 게시판 > VIEW</td>
+				<td>/UI-BA-GC-22.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>교육원 커뮤니티 > 교육원 홈페이지 > 교육생 게시판 > WRITE</td>
+				<td>/UI-BA-GC-23.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">단원커뮤니티</div>
+				</td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 메인</td>
+				<td>/UI-BA-HA-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 커뮤니티 > 공지사항 > LIST</td>
+				<td>/UI-BA-HB-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 커뮤니티 > 공지사항 > VIEW</td>
+				<td>/UI-BA-HB-12.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 커뮤니티 > 커뮤니티 신설신청 > LIST</td>
+				<td>/UI-BA-HB-21.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 커뮤니티 > 커뮤니티 신설신청 > VIEW</td>
+				<td>/UI-BA-HB-22.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 커뮤니티 > 커뮤니티 신설신청 > WRITE</td>
+				<td>/UI-BA-HB-23.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 커뮤니티 > 자유게시판 > LIST</td>
+				<td>/UI-BA-HB-31.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 커뮤니티 > 자유게시판 > VIEW</td>
+				<td>/UI-BA-HB-32.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 커뮤니티 > 자유게시판 > WRITE</td>
+				<td>/UI-BA-HB-33.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 단원 홈페이지 > 활동단원 게시판 > LIST</td>
+				<td>/UI-BA-HC-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 단원 홈페이지 > 활동단원 게시판 > VIEW</td>
+				<td>/UI-BA-HC-12.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 단원 홈페이지 > 활동단원 게시판 > WRITE</td>
+				<td>/UI-BA-HC-13.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 단원 홈페이지 > 귀국단원 게시판 > LIST</td>
+				<td>/UI-BA-HC-21.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 단원 홈페이지 > 귀국단원 게시판 > VIEW</td>
+				<td>/UI-BA-HC-22.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 단원 홈페이지 > 귀국단원 게시판 > WRITE</td>
+				<td>/UI-BA-HC-23.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 단원 홈페이지 > 온라인면접신청 게시판 > LIST</td>
+				<td>/UI-BA-HC-31.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 단원 홈페이지 > 온라인면접신청 게시판 > VIEW</td>
+				<td>/UI-BA-HC-32.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 단원 홈페이지 > 온라인면접신청 게시판 > WRITE</td>
+				<td>/UI-BA-HC-33.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 >대륙 > 국가 > LIST</td>
+				<td>UI-BA-HD-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 대륙 > 국가 > VIEW</td>
+				<td>/UI-BA-HD-12.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 대륙 > 국가 > WRITE</td>
+				<td>/UI-BA-HD-13.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 단원블로그 > 최근업데이트 목록</td>
+				<td>/UI-BA-HE-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 단원블로그 > 전체 블로그 목록</td>
+				<td>/UI-BA-HE-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 단원블로그 > 국가별 블로그 목록</td>
+				<td>/UI-BA-HE-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 블로그 등록 > 신청폼</td>
+				<td>/UI-BA-HF-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 블로그 등록 > 등록완료</td>
+				<td>/UI-BA-HF-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>단원커뮤니티 > 활동정보</td>
+				<td>/UI-BA-HG-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">사이트맵</div>
+				</td>
+			</tr>
+			<tr>
+				<td>사이트맵</td>
+				<td>/UI-BA-JA-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">유틸리티 ( 로그인 후 )</div>
+				</td>
+			</tr>
+			<tr>
+				<td>유틸리티 ( 로그인 후 ) > 로그아웃</td>
+				<td>/UI-BA-KA-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>유틸리티 ( 로그인 후 ) > 회원정보</td>
+				<td>/UI-BA-KB-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">푸터</div>
+				</td>
+			</tr>
+			<tr>
+				<td>푸터 > 개인정보취급방침</td>
+				<td>/UI-BA-LA-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>푸터 > 이메일무단수집거부</td>
+				<td>/UI-BA-LB-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>푸터 > 책임의한계및법적고지</td>
+				<td>/UI-BA-LC-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>푸터 > 도로명주소검색안내</td>
+				<td>/UI-BA-LD-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">단원 홈페이지 메인</div>
+				</td>
+			</tr>
+			<tr>
+				<td>단원 홈페이지 메인</td>
+				<td>/UI-BC-00-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">정보변경</div>
+				</td>
+			</tr>
+			<tr>
+				<td>정보변경</td>
+				<td>/UI-BC-A0-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">보고서관리</div>
+				</td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 활동 보고서</td>
+				<td>/UI-BC-BA-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 활동 보고서 > 활동 보고서 등록</td>
+				<td>/UI-BC-BA-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 활동 보고서 > 활동 보고서 등록 > 우수보고서조회</td>
+				<td>/UI-BC-BA-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 활동 보고서 > 활동 보고서 등록 > 임시저장</td>
+				<td>/UI-BC-BA-12.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 활동 보고서 > 활동 보고서 등록 > 최종제출</td>
+				<td>/UI-BC-BA-13.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 활동 보고서 자료실 > LIST</td>
+				<td>/UI-BC-BB-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 활동 보고서 자료실 > VIEW</td>
+				<td>/UI-BC-BB-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 안전상황 보고서</td>
+				<td>/UI-BC-BC-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 안전상황 보고서 > 안전상황 보고서 등록</td>
+				<td>/UI-BC-BC-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 안전상황 보고서 > 안전상황 보고서 등록 > 임시저장</td>
+				<td>/UI-BC-BC-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 안전상황 보고서 > 안전상황 보고서 등록 > 최종제출</td>
+				<td>/UI-BC-BC-12.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 복무상황 보고서</td>
+				<td>/UI-BC-BD-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 복무상황 보고서 > 복무상황 보고서 등록</td>
+				<td>/UI-BC-BD-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 복무상황 보고서 > 복무상황 보고서 등록 > 임시저장</td>
+				<td>/UI-BC-BD-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 복무상황 보고서 > 복무상황 보고서 등록 > 최종제출</td>
+				<td>/UI-BC-BD-12.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 활동현황 보고서</td>
+				<td>/UI-BC-BE-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 활동현황 보고서 > 활동현황 보고서 등록</td>
+				<td>/UI-BC-BE-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 활동현황 보고서 > 활동현황 보고서 등록 > 임시저장</td>
+				<td>/UI-BC-BE-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>보고서관리 > 활동현황 보고서 > 활동현황 보고서 등록 > 최종제출</td>
+				<td>/UI-BC-BE-12.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">복무신청</div>
+				</td>
+			</tr>
+			<tr>
+				<td>복무신청</td>
+				<td>/UI-BC-C0-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (계약연장)</td>
+				<td>/UI-BC-CA-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (계약연장) > 임시저장</td>
+				<td>/UI-BC-CA-11.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (계약연장) > 최종제출</td>
+				<td>/UI-BC-CA-12.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (국외근무연장)</td>
+				<td>/UI-BC-CA-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (국외근무연장) > 임시저장</td>
+				<td>/UI-BC-CA-21.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (국외근무연장) > 최종제출</td>
+				<td>/UI-BC-CA-22.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (주재국 내 휴가신청)</td>
+				<td>/UI-BC-CA-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (주재국 내 휴가신청) > 임시저장</td>
+				<td>/UI-BC-CA-31.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (주재국 내 휴가신청) > 최종제출</td>
+				<td>/UI-BC-CA-32.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (주재국 외 휴가신청)</td>
+				<td>/UI-BC-CA-40.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (주재국 외 휴가신청) > 임시저장</td>
+				<td>/UI-BC-CA-41.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (주재국 외 휴가신청) > 최종제출</td>
+				<td>/UI-BC-CA-42.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (연가 및 근무지이탈신청)</td>
+				<td>/UI-BC-CA-50.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (연가 및 근무지이탈신청) > 임시저장</td>
+				<td>/UI-BC-CA-51.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (연가 및 근무지이탈신청) > 최종제출</td>
+				<td>/UI-BC-CA-52.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (근무지 이탈 신청)</td>
+				<td>/UI-BC-CA-60.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (근무지 이탈 신청) > 임시저장</td>
+				<td>/UI-BC-CA-61.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (근무지 이탈 신청) > 최종제출</td>
+				<td>/UI-BC-CA-62.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (일시귀국 신청)</td>
+				<td>/UI-BC-CA-70.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (일시귀국 신청) > 임시저장</td>
+				<td>/UI-BC-CA-71.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (일시귀국 신청) > 최종제출</td>
+				<td>/UI-BC-CA-72.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (중도 계약 해지 신청)</td>
+				<td>/UI-BC-CA-80.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (중도 계약 해지 신청) > 임시저장</td>
+				<td>/UI-BC-CA-81.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (중도 계약 해지 신청) > 최종제출</td>
+				<td>/UI-BC-CA-82.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (거주지변경신청)</td>
+				<td>/UI-BC-CA-90.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (거주지변경신청) > 임시저장</td>
+				<td>/UI-BC-CA-91.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (거주지변경신청) > 최종제출</td>
+				<td>/UI-BC-CA-92.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (출장신청)</td>
+				<td>/UI-BC-CA-A0.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (출장신청) > 임시저장</td>
+				<td>/UI-BC-CA-A1.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (출장신청) > 최종제출</td>
+				<td>/UI-BC-CA-A2.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (현지활동지원비신청)</td>
+				<td>/UI-BC-CA-B0.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (현지활동지원비신청) > 임시저장</td>
+				<td>/UI-BC-CA-B1.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (현지활동지원비신청) > 최종제출</td>
+				<td>/UI-BC-CA-B2.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (활동물품지원비 신청)</td>
+				<td>/UI-BC-CA-C0.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (활동물품지원비 신청) > 임시저장</td>
+				<td>/UI-BC-CA-C1.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 복무신청 > 복무신청등록 (활동물품지원비 신청) > 최종제출</td>
+				<td>/UI-BC-CA-C2.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 현장사업계획</td>
+				<td>/UI-BC-CB-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 현장사업계획 > 현장사업계획서 보기</td>
+				<td>/UI-BC-CB-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 현장사업계획 > 현장사업계획서 등록</td>
+				<td>/UI-BC-CB-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 현장사업계획 > 현장사업계획서 등록 > 임시저장</td>
+				<td>/UI-BC-CB-21.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 현장사업계획 > 현장사업계획서 등록 > 양식다운로드</td>
+				<td>/UI-BC-CB-22.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 현장사업계획 > 현장사업계획서 등록 > 최종제출</td>
+				<td>/UI-BC-CB-23.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 현장사업관리</td>
+				<td>/UI-BC-CC-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>복무신청 > 현장사업자료실</td>
+				<td>/UI-BC-CD-00.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">게시판</div>
+				</td>
+			</tr>
+			<tr>
+				<td>게시판 > 활동단원 게시판 > LIST</td>
+				<td>/UI-BC-DA-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>게시판 > 활동단원 게시판 > VIEW</td>
+				<td>/UI-BC-DA-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>게시판 > 활동단원 게시판 > WRITE</td>
+				<td>/UI-BC-DA-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>게시판 > 귀국단원 게시판 > LIST</td>
+				<td>/UI-BC-DB-10.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>게시판 > 귀국단원 게시판 > VIEW</td>
+				<td>/UI-BC-DB-20.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr>
+				<td>게시판 >귀국단원 게시판 > WRITE</td>
+				<td>/UI-BC-DB-30.html</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">증명서 발급</div>
+				</td>
+			</tr>
+			<tr>
+				<td>증명서 발급</td>
+				<td>외부링크</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+			<tr class="linetitle">
+				<td>
+					<div class="sub-tit">봉사단 홈페이지</div>
+				</td>
+			</tr>
+			<tr>
+				<td>봉사단 홈페이</td>
+				<td>외부링크</td>
+				<td> </td>
+				<td> </td>
+				<td> </td>
+				<td><span class="state"><span class="undecided"></span></span></td>
+			</tr>
+		</tbody>
+	
+	</table>
+</section>
+<hr />
+<footer>
+	<div class="author">
+		<h3>담당 퍼블리셔</h3>
+		<dl>
+			<dt>이름</dt>
+			<dd><strong>김재희</strong></dd>
+			<dd><strong>홍길동</strong></dd>
+		</dl>
+	</div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+// @extend Collection
+%ir {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+}
+.ir {
+	@extend %ir;
+}
+// accessibility(a11y)
+%a11y {
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+%skip-nav {
+	@extend %a11y;
+	
+	&:focus,
+	&:active {
+		clip: auto;
+		width: 100%;
+		height: auto;
+		margin: 0;
+	}
+}
+
+// @ clear float
+%clear-fix {
+	&:before,
+	&:after {
+		display: table;
+		content: "";
+	}
+	&:after {
+		clear:both;
+	}
+}

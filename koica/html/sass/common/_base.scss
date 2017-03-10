@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/* web-font definition */
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url("../webfonts/NanumGothic-Regular.eot");
+	src: url("../webfonts/NanumGothic-Regular.eot?#iefix") format('embedded-opentype'),
+	url("../webfonts/NanumGothic-Regular.woff2") format('woff2'),
+	url("../webfonts/NanumGothic-Regular.woff") format('woff'),
+	url("../webfonts/NanumGothic-Regular.ttf") format('truetype');
+}
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url("../webfonts/NanumGothic-Bold.eot");
+	src: url("../webfonts/NanumGothic-Bold.eot?#iefix") format('embedded-opentype'),
+	url("../webfonts/NanumGothic-Bold.woff2") format('woff2'),
+	url("../webfonts/NanumGothic-Bold.woff") format('woff'),
+	url("../webfonts/NanumGothic-Bold.ttf") format('truetype');
+}
+@font-face {
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 800;
+	src: url("../webfonts/NanumGothic-ExtraBold.eot");
+	src: url("../webfonts/NanumGothic-ExtraBold.eot?#iefix") format('embedded-opentype'),
+	url("../webfonts/NanumGothic-ExtraBold.woff2") format('woff2'),
+	url("../webfonts/NanumGothic-ExtraBold.woff") format('woff'),
+	url("../webfonts/NanumGothic-ExtraBold.ttf") format('truetype');
+}
+
+/**
+ * -------------------------------
+ * @ RESET CSS *
+ * -------------------------------
+ */
+html, body, div, p, span, strong, b, em, iframe, pre, h1, h2, h3, h4, h5, h6, img, dl, dt, dd, fieldset, form, legend, label, table, caption, thead, tbody, tfoot, tr, th, td, ul, ol, li, a, input, select, textarea,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, menu, nav, section { display: block; }
+body,h1,h2,h3,h4,h5,h6,th,td,input,select,textarea {
+	font-family: 'Nanum Gothic', '나눔고딕', Dotum, "돋음", AppleGothic, Sans-serif, Arial;
+	font-size: 12px;
+	line-height: 1;
+	color: #3e3e3e;
+}
+ul, ol, li {
+	list-style: none;
+}
+em, address {
+	font-style: normal;
+}
+img {
+	border: 0 none;
+	vertical-align: middle;
+}
+sup {
+	position: relative;
+	top: 2px;
+	font-size: 11px;
+	line-height: 100%;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption {
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+th, td {
+	vertical-align: middle;
+	white-space: nowrap;
+}
+a {
+	color: #333;
+	text-decoration: none;
+	line-height: 1;
+}
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+	&:focus {
+		//color: #71777c;
+		outline: 1px dotted #333;
+	}
+}
+legend {
+	display: none;
+}
+*, *:before, *:after, html, body {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+button[disabled],
+html input[disabled] {
+	cursor: default
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	padding: 0;
+	border: 0
+}
+input[type=checkbox],
+input[type=radio] {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0
+}
+fieldset[disabled] .form-control {
+	background-color: #eee;
+	opacity: 1;
+}
+.form-control {
+	display: inline-block;
+	padding: 4px 12px;
+	font-size: 12px;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	&:focus {
+		border-color: #66afe9;
+		outline: 0;
+		box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6)
+	}
+	&[disabled],
+	&[readonly] {
+		background-color: #eee;
+		opacity: 1;
+	}
+	&::-moz-placeholder {
+		color: #999;
+		opacity: 1
+	}
+	&:-ms-input-placeholder {
+		color: #999
+	}
+	&::-webkit-input-placeholder {
+		color: #999
+	}
+}
+
+.form-control[disabled],
+fieldset[disabled] .form-control {
+	cursor: not-allowed
+}

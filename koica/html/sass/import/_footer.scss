@@ -1,0 +1,112 @@
+//@import "../common/variables", "../common/_placeholders";
+
+/**
+ * ---------------------
+ * @footer Style
+ * ---------------------
+ */
+#footer-wrap {
+	position: relative;
+	width: 100%;
+	padding-bottom: 40px;
+	&:before {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 51px;
+		content: "";
+		background-color: #fcfcfc;
+		border: solid #e9e9e9;
+		border-width: 1px 0;
+	}
+	.footer {
+		position: relative;
+		width: 1120px;
+		margin: 0 auto;
+		padding-left: 260px;
+		&:before {
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 51px;
+			content: "";
+			background-color: #f7f8fb;
+			border: solid #e9e9e9;
+			border-width: 1px 0;
+		}
+	}
+	.footer-menu {
+		@extend %clear-fix;
+		overflow: hidden;
+		li {
+			float: left;
+			&:first-child {
+				margin-left: -40px;
+			}
+			a {
+				position: relative;
+				display: block;
+				padding: 20px 40px;
+				font-size: 13px;
+				&:after {
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 24px;
+					content: "";
+					width: 1px;
+					height: 7px;
+					background: #999a9b;
+				}
+			}
+		}
+	}
+	.footer-logo {
+		position: absolute;
+		left: 30px;
+		top: 80px;
+		width: 163px;
+		height: 35px;
+		background: url("#{$path-common}footer_logo.png") no-repeat;
+	}
+	.guide-menu {
+		@extend %clear-fix;
+		overflow: hidden;
+		margin: {
+			top: 25px;
+			bottom: 17px;
+		}
+		li {
+			float: left;
+			&:first-child {
+				margin-left: -12px;
+			}
+			a {
+				display: block;
+				position: relative;
+				padding: 3px 12px;
+				&:after {
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 6px;
+					content: "";
+					width: 1px;
+					height: 7px;
+					background: #999a9b;
+				}
+			}
+		}
+	}
+	address {
+		margin-bottom: 15px;
+		line-height: 1.6;
+		span {
+			display: block;
+		}
+	}
+}
